@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="colorPrimary">#a15c63</color>
+  <color name="colorPrimaryDark">#692027</color>
+  <color name="ColorAccent">#8A9D5A</color>
+  <color name="colorAccent">#8A9D5A</color>
+  <color name="colorPrimaryLight">#C2858B</color>
+  <color name="colorHighlight">#793C42</color>
+  <color name="colorPrimaryText">#15443E</color>
+  <color name="colorSecondaryText">#692027</color>
+  <color name="colorDivider">#526620</color>
+  
+  <color name="ColorPrimary">#a15c63</color>
+  <color name="ColorPrimaryDark">#692027</color>
+
+  <color name="ripple">#F06292</color>
+</resources>

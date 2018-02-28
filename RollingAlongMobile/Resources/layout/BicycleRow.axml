@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="30dp"
+    android:id="@+id/glavni"
+    android:orientation="horizontal">
+    <ImageView
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/Slika"
+        android:adjustViewBounds="true" />
+    <TextView
+        android:id="@+id/Naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Slika"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <TextView
+        android:id="@+id/Bicikl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Slika"
+        android:paddingLeft="20dp"
+        android:paddingTop="55dp"
+        android:textColor="@color/ColorPrimary"
+        android:textSize="14sp" />
+</RelativeLayout>

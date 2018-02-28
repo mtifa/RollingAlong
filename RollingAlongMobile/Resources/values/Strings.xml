@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Dobrodošli!</string>
+    <string name="ApplicationName">RollingAlongMobile</string>
+    <string name="app_name">RollingAlongMobile</string>
+    <string name="bicikli_label">Bicycles</string>
+    <string name="oprema_label">Equipment</string>
+    <string name="biciclidod">Bicikli Dodatno</string>
+    <string name="openDrawer">Menu</string>
+    <string name="closeDrawer">Rolling Along</string>
+    <string name="google_maps_key">AIzaSyDm7R9FiXFe1HZ13V1e57FpEff78UH0QJY</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="menu_refresh">Refresh</string>
+
+  <string name="bicycle_prompt">Choose a category of bicycles:</string>
+  <string-array name="bicycles_array">
+    <item>Road bicycles</item>
+    <item>Touring bicycles</item>
+    <item>Hybrid bicycles</item>
+    <item>Flat bar road bicycles</item>
+    <item>Cyclo-cross bicycles</item>
+    <item>Utility bicycles</item>
+    <item>Freight bicycles</item>
+    <item>Racing bicycles</item>
+  </string-array>
+</resources>

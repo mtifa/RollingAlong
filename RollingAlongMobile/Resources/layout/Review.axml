@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#F5F5F5"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp">
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar1"
+                android:progressTint="#a15c63"
+                android:progressBackgroundTint="#ababab"
+                android:secondaryProgressTint="#a15c63"
+                android:layout_marginTop="55dp"/>
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#a15c63"
+                android:textColor="#000000"
+                android:id="@+id/OpisRezenzije1"
+                android:layout_below="@id/ratingBar1" />
+            <Button
+                android:textColor="#ffffff"
+                android:text="Send"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:layout_below="@id/OpisRezenzije1"
+                style="@style/Widget.AppCompat.Button"
+                android:background="#a15c63" />
+        </RelativeLayout>
+    <!--End Content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/toolbar" />
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="250dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="250px"
+    android:background="#F5F5F5"
+    android:weightSum="100"
+    android:minWidth="500px">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:src="@drawable/location" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="50"
+        android:orientation="vertical">
+        <TextView
+            android:text="Ime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtName"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000" />
+        <TextView
+            android:text="Adresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAddress"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000" />
+        <TextView
+            android:text="Broj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNumber"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lib="http://schemas.android.com/apk/lib-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/slikapozadine1" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/txtTitle"
+            android:text="RA Location\ntracking app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primary"
+            android:layout_marginTop="170dp"
+            android:paddingBottom="60dp" />
+        <EditText
+            android:hint="Username"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:inputType="textPersonName"
+            android:backgroundTint="#a15c63"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:id="@+id/usernameprijava" />
+        <EditText
+            android:hint="Password"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:backgroundTint="#a15c63"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameprijava"
+            android:id="@+id/passwordprijava" />
+        <Button
+            android:layout_marginTop="30dp"
+            android:background="#a15c63"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/passwordprijava"
+            android:id="@+id/prijavaGumb1"
+            style="@style/Widget.AppCompat.Button" />
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/prijavaGumb1"
+            android:id="@+id/loadingPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <ProgressBar
+                android:indeterminateTint="#a15c63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+    <!--Content-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="55dp">
+            <TextView
+                android:text="Days of rent: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_gravity="top"
+                android:layout_marginTop="60dp"
+                android:paddingLeft="15dp" />
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnNumber"
+                app:backGroundColor="@color/colorDivider"
+                app:textSize="5sp"
+                android:layout_marginTop="80dp" />
+            <TextView
+                android:id="@+id/txtCat1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_gravity="top"
+                android:layout_marginTop="100dp"
+                android:paddingLeft="15dp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="100dp" />
+            <ListView
+                android:background="#FAFAFA"
+                android:divider="#ffffff"
+                android:dividerHeight="12px"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/bicycles11"
+                android:layout_marginTop="150dp" />
+            <Refractored.Fab.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:src="@drawable/ic_keyboard_1"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="@color/colorDivider"
+                app:fab_colorRipple="@color/ripple" />
+        </RelativeLayout>
+    <!--End Content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/toolbar" />
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="250dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
